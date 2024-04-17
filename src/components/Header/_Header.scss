@@ -1,0 +1,70 @@
+.header {
+    position: relative; // Necesario para posicionar el pseudo-elemento
+    height: 500px;
+    background-image: url('../../assets/hero.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    padding: 20px;
+    justify-content: start;
+    align-items: center;
+    background-size: 80%;
+ 
+    background-color: rgba(0, 0, 0, 0.699);
+    color: white;
+    .titulo {
+        position: relative; // Asegúrate de que .titulo es relativo para que z-index funcione correctamente
+        z-index: 2; // Mayor que el z-index del ::after para que aparezca encima
+        color: #E36914;
+        font-size: 58px;
+        font-family: "roboto", sans-serif;
+        font-weight: 100;
+      }
+   .header-p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 200;
+    position: relative;
+    z-index: 2;
+   }
+   .header-btn{
+    position: relative; // Asegúrate de que .titulo es relativo para que z-index funcione correctamente
+        z-index: 2;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 200;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid white;
+    background-color: #E36914;
+    top: 20px;
+   }
+   &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.39);
+    z-index: 1; // Se asegura de que esté detrás del contenido del .header
+  }
+  }
+  
+
+  @media (max-width: 480px) {
+    .header{
+        height: 200px;
+        background-size: 100%;
+        .titulo{
+            font-size: 28px;
+            width: 80%;
+            font-weight: 300;
+        }
+        .header-p{
+            font-size: 18px;
+        }
+    }
+}
