@@ -56,15 +56,19 @@
 
   @media (max-width: 480px) {
     .header{
-        height: 200px;
+        height: 100px;
         background-size: 100%;
+        .header-btn{
+            font-size: 12px;
+            padding: 5px 10px;
+        }
         .titulo{
-            font-size: 28px;
+            font-size: 22px;
             width: 80%;
             font-weight: 300;
         }
         .header-p{
-            font-size: 18px;
+            font-size: 16px;
         }
     }
 }

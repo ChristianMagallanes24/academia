@@ -47,19 +47,22 @@
 
 @media (max-width: 480px) {
     .elegirnos-container{
-        flex-direction: column;
+        flex-direction: column-reverse;
         padding: 50px 20px;
         gap: 20px;
+        
         .video{
-            height: 201px;
+            height: 150px;
         }
         .razones{
             .elegirnos-titulo{
-                font-size: 24px;
+                font-size: 20px;
+                text-align: center;
             }
             .razon{
                 .razon-titulo{
-                    font-size: 18px;
+                    font-size: 14px;
+                    margin-bottom: 10px;
                 }
                 .razon-p{
                     font-size: 14px;

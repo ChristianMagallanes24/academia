@@ -1,0 +1,69 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    padding: 2rem;
+    height: 250px;
+    align-items: center;
+    background-color: #f2f2f2; /* Cambia al color que prefieras */
+    color: #333; /* Cambia al color de texto que prefieras */
+  }
+  
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+    h3{
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-size: 28px;
+    }
+    h2{
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-size: 40px;
+    }
+  }
+  
+  .footer-section h2,
+  .footer-section h3 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li a {
+    color: #333; /* Asegúrate de que esto coincida con el color de texto del footer */
+    text-decoration: none;
+    transition: color 0.3s ease;
+  
+    &:hover {
+      color: #555; /* Cambia para el efecto hover que prefieras */
+    }
+  }
+  
+  /* Añadir cualquier estilo adicional que necesites aquí */
+  @media (max-width: 480px) {
+    .footer-section{
+        
+        h3{
+            font-size: 22px;
+            text-align: start;
+        }
+        h2{
+            font-size: 28px;
+            text-align: start;
+        }
+    }
+    .footer {
+        height: auto;
+        justify-content: start;
+        align-items: start;
+        
+      flex-direction: column-reverse;
+      gap: 20px;
+    }
+  
+}
