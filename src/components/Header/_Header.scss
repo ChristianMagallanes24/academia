@@ -1,7 +1,7 @@
 .header {
     position: relative; // Necesario para posicionar el pseudo-elemento
     height: 500px;
-    background-image: url('../../assets/hero.jpeg');
+    background-image: url('../../assets/banner.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -9,7 +9,7 @@
     padding: 20px;
     justify-content: start;
     align-items: center;
-    background-size: 80%;
+    background-size: 100%;
  
     background-color: rgba(0, 0, 0, 0.699);
     color: white;
@@ -41,16 +41,7 @@
     background-color: #E36914;
     top: 20px;
    }
-   &::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.39);
-    z-index: 1; // Se asegura de que esté detrás del contenido del .header
-  }
+  
   }
   
 
@@ -58,17 +49,19 @@
     .header{
         height: 100px;
         background-size: 100%;
+        background-color: #000;
         .header-btn{
-            font-size: 12px;
+            font-size: 18px;
             padding: 5px 10px;
         }
         .titulo{
             font-size: 22px;
             width: 80%;
-            font-weight: 300;
+            font-weight: 500;
         }
         .header-p{
-            font-size: 16px;
+            font-size: 24px;
+            font-weight: 800;
         }
     }
 }
