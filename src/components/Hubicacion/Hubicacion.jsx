@@ -25,11 +25,11 @@ const Hubicacion = () => {
           </div>
           <div className="info-item">
             <i className="icono"><FaPhone /></i> 
-            <p>telefono</p>
+            <p>099 802 910</p>
           </div>
           <div className="info-item">
             <i className="icono"><IoLocationSharp /></i> {/* Icono de dirección */}
-            <p>direccion</p>
+            <p>Jose Batlle y Ordoñez 418</p>
           </div>
         </div>
       </div>
