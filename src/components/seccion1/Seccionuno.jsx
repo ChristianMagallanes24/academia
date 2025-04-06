@@ -6,7 +6,7 @@ const Seccionuno = () => {
         <div className='elegirnos-container'>
            
             <div className='razones'>
-            <h2 className='elegirnos-titulo'>por que elegir Guerreros boxin club?</h2>
+            <h2 className='elegirnos-titulo'>por que elegirnos?</h2>
                 <div className='razon'>
                     <div>
                     
