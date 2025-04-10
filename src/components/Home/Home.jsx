@@ -26,7 +26,7 @@ function Home() {
       </video>
       
       <div className="content">
-        <h1>Bienvenido</h1>
+        <h1 className='titulo'>Bienvenido</h1>
 
         {isLoading ? (
           <div className="loading">
